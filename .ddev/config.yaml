@@ -1,4 +1,4 @@
-name: craftcms-experimentations
+name: craft-time
 type: craftcms
 docroot: web
 php_version: "8.2"

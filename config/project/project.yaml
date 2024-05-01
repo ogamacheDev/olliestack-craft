@@ -1,4 +1,4 @@
-dateModified: 1714522924
+dateModified: 1714528244
 email:
   fromEmail: dev@ogamache.com
   fromName: Experimentation
@@ -6,7 +6,7 @@ email:
 meta:
   __names__:
     89bb4605-0541-43b5-9ddd-f840c77892b6: Experimentation # Experimentation
-    15860f67-3d02-41dd-b550-efe5672af605: Experimentation # Experimentation
+    15860f67-3d02-41dd-b550-efe5672af605: 'Craft Time' # Craft Time
 plugins:
   vite:
     edition: standard

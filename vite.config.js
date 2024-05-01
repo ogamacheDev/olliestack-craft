@@ -1,4 +1,5 @@
 import ViteRestart from 'vite-plugin-restart';
+import copy from 'rollup-plugin-copy';
 
 export default ({command}) => ({
     base: command === 'serve' ? '' : '/dist/',
@@ -7,7 +8,7 @@ export default ({command}) => ({
         outDir: 'web/dist/',
         rollupOptions: {
             input: {
-                app: 'src/js/app.ts',
+                app: 'src/js/app.js',
             }
         },
     },
@@ -22,8 +23,12 @@ export default ({command}) => ({
     plugins: [
         ViteRestart({
             reload: [
-                '/templates/**/*',
+                'templates/**/*',
             ],
+        }),
+        copy({
+            targets: [{src: 'assets/**/*', dest: 'web/dist/assets/'}],
+            hook: 'writeBundle'
         }),
     ],
 });
