@@ -1,0 +1,27 @@
+dateModified: 1714522924
+email:
+  fromEmail: dev@ogamache.com
+  fromName: Experimentation
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    89bb4605-0541-43b5-9ddd-f840c77892b6: Experimentation # Experimentation
+    15860f67-3d02-41dd-b550-efe5672af605: Experimentation # Experimentation
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: Experimentation
+  schemaVersion: 5.0.0.20
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true
