@@ -4,7 +4,11 @@ This is my template for Craft using Vite and TailwindCSS.
 
 ## Information
 
-**Craft Version: 5.7.7**
+| Package / Plugin  | Version |
+|-------------------|---------|
+| Craft             | 5.7.7   |
+| Vite              | 6.3.5   |
+| Craft Vite Plugin | 5.0.2   |
 
 ## How to start
 
