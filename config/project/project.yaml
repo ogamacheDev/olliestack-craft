@@ -1,6 +1,6 @@
 dateModified: 1714528244
 email:
-  fromEmail: dev@ogamache.com
+  fromEmail: o@olliedev.ca
   fromName: Experimentation
   transportType: craft\mail\transportadapters\Sendmail
 meta:
@@ -16,7 +16,7 @@ system:
   edition: solo
   live: true
   name: Experimentation
-  schemaVersion: 5.0.0.20
+  schemaVersion: 5.7.0.3
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
