@@ -1,9 +1,0 @@
-baseUrl: $PRIMARY_SITE_URL
-enabled: true
-handle: default
-hasUrls: true
-language: en-US
-name: 'Craft Time'
-primary: true
-siteGroup: 89bb4605-0541-43b5-9ddd-f840c77892b6 # Experimentation
-sortOrder: 1
