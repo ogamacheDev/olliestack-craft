@@ -1,5 +1,5 @@
-import ViteRestart from 'vite-plugin-restart';
 import copy from 'rollup-plugin-copy';
+import ViteRestart from 'vite-plugin-restart';
 
 export default ({command}) => ({
     base: command === 'serve' ? '' : '/dist/',
@@ -13,12 +13,17 @@ export default ({command}) => ({
         },
     },
     server: {
+        // Allow cross-origin requests -- https://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6
+        allowedHosts: true,
+        cors: {
+            origin: /https?:\/\/([A-Za-z0-9\-\.]+)?(localhost|\.local|\.test|\.site)(?::\d+)?$/
+        },
         fs: {
             strict: false
         },
         host: '0.0.0.0',
-        port: 3000,
-        strictPort: true,
+        port: 4000,
+        strictPort: false,
     },
     plugins: [
         ViteRestart({
