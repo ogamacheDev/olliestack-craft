@@ -13,7 +13,8 @@ This is my template for Craft using Vite and TailwindCSS.
 ## How to start
 
 For a new project, it is a very simple procedure:
-1. Clone the project
+1. Create a project from the template
+2. Go in the CraftCMS folder ```cd public```
 2. Configure ddev using ```ddev config```
 3. Start the project using ```ddev start```
 4. Install the composer packages using ```ddev composer install```
@@ -24,7 +25,3 @@ For a new project, it is a very simple procedure:
 ## Build the project
 
 To build the project, simply run ```yarn build```
-
-## Deploy the project
-
-To deploy the project on Dokploy, you need to add some mounts:
