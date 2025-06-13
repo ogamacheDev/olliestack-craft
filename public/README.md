@@ -24,3 +24,7 @@ For a new project, it is a very simple procedure:
 ## Build the project
 
 To build the project, simply run ```yarn build```
+
+## Deploy the project
+
+To deploy the project on Dokploy, you need to add some mounts:

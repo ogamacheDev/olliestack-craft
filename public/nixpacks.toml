@@ -1,5 +1,5 @@
 [phases.build]
-cmds = []
+cmds = [ "yarn build" ]
 
 [start]
 cmd = "php -S 0.0.0.0:80 -t web"
