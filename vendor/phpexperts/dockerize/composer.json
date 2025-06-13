@@ -1,0 +1,32 @@
+{
+    "name": "phpexperts/dockerize",
+    "description": "The quickest and easiest way to switch any PHP app/library to use Docker.",
+    "keywords": [
+        "docker",
+        "dockerize",
+        "new project"
+    ],
+    "homepage": "https://www.phpexperts.pro/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PHP Experts, Inc.",
+            "homepage": "https://www.phpexperts.pro/"
+        },
+        {
+            "name": "Theodore R. Smith",
+            "homepage": "https://www.linkedin.com/in/tedrsmith"
+        }
+    ],
+    "suggest": {
+        "phpexperts/docker-phan":     "Dockerized phan/phan",
+        "phpexperts/docker-phpstan":  "Dockerized phpstan/phpstan",
+        "phpexperts/docker-rector":   "Dockerized rector/rector"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "vendor/bin/php dockerize"
+        ]
+    },
+    "bin": ["bin/php", "bin/composer", "bin/php-ci.sh"]
+}

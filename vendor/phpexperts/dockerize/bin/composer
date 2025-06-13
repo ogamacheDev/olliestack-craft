@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Detect if it's running inside of docker and run it natively if it is.
+# @see https://stackoverflow.com/a/25518345/430062
+if [ "$PHP_VERSION" == "native" ] || [ -f "/.dockerenv" ]; then
+  (/bin/env --chdir=/ composer "$@")
+  exit
+fi
+
+# Get the script's directory.
+# @see https://stackoverflow.com/a/246128/430062
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+${SCRIPT_DIR}/php composer "$@"

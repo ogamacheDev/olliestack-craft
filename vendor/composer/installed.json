@@ -1,15 +1,9 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "7aa843d7f6c3703a2683c511506b6366",
-    "packages": [],
-    "packages-dev": [
+    "packages": [
         {
             "name": "phpexperts/dockerize",
             "version": "v13.0.2",
+            "version_normalized": "13.0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPExpertsInc/dockerize.git",
@@ -26,12 +20,14 @@
                 "phpexperts/docker-phpstan": "Dockerized phpstan/phpstan",
                 "phpexperts/docker-rector": "Dockerized rector/rector"
             },
+            "time": "2025-05-02T01:10:21+00:00",
             "bin": [
                 "bin/php",
                 "bin/composer",
                 "bin/php-ci.sh"
             ],
             "type": "library",
+            "installation-source": "dist",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -57,15 +53,11 @@
                 "issues": "https://github.com/PHPExpertsInc/dockerize/issues",
                 "source": "https://github.com/PHPExpertsInc/dockerize/tree/v13.0.2"
             },
-            "time": "2025-05-02T01:10:21+00:00"
+            "install-path": "../phpexperts/dockerize"
         }
     ],
-    "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {},
-    "prefer-stable": false,
-    "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "dev": true,
+    "dev-package-names": [
+        "phpexperts/dockerize"
+    ]
 }
