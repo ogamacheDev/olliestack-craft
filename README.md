@@ -1,4 +1,4 @@
-# OllieDev - Craft Vite Template
+# OllieStack - Craft
 
 This is my template for Craft using Vite and TailwindCSS.
 
@@ -14,7 +14,6 @@ This is my template for Craft using Vite and TailwindCSS.
 
 For a new project, it is a very simple procedure:
 1. Create a project from the template
-2. Go in the CraftCMS folder ```cd public```
 2. Configure ddev using ```ddev config```
 3. Start the project using ```ddev start```
 4. Install the composer packages using ```ddev composer install```
